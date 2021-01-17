@@ -1,12 +1,6 @@
-body {padding: 0;
-    margin: 0;
+body {
     background-image: url("hw-1/images/nikolas.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Arial', sans-serif;
-    font-weight: 300;
+
 
 }
 h1 {background-color: purple;
