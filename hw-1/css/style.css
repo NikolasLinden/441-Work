@@ -1,8 +1,16 @@
-body {
-    background-image: url("hw-1/images/nikolas.jpg");
-
+body, html {
+  margin: 0%;
+  padding: 0%;
+  background-image: url("../images/nikolas.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  repeat: no-repeat;
 
 }
+
+
 h1 {background-color: purple;
   font-family: 'PT Serif', serif;
   text-align: center;
@@ -10,6 +18,9 @@ h1 {background-color: purple;
   display: inline-block;
   padding: 10pt;
   width: 60%;
+}
+.p {display: inline-block;
+  text-align: center;
 }
 p {
   font-family: 'Ubuntu', sans-serif;
@@ -31,11 +42,13 @@ div {
   height: auto;
   border: solid black;
   padding: 10pt;
+  background: rgba(150, 204, 204, 0.5);
 
 }
 
 .navbar {
-  background-color: darkblue;
+  display: inline-block;
+  background: rgba(150, 204, 204, 0.5);;
   position: normal;
   text-align: center;
   padding: 20pt;
