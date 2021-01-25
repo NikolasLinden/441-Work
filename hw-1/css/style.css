@@ -28,7 +28,8 @@ p {
 }
 div {
   text-align: center;
-  margin: right
+  margin: right;
+  width: auto;
 ;
 }
 
@@ -45,22 +46,33 @@ div {
   background: rgba(150, 204, 204, 0.5);
 
 }
+.para2 {
+  display: inline-block;
+  margin: 30pt;
+  width: 60%;
+  background-color: lightblue;
+  text-align: center;
+  height: auto;
+  border: solid black;
+  padding: 10pt;
+
+}
 
 .navbar {
-  display: inline-block;
+  display: block;
   background: rgba(150, 204, 204, 0.5);;
-  position: normal;
   text-align: center;
   padding: 20pt;
-  width: auto;
+  width: 50%;
   height: 30pt;
   border: solid black;
+  margin: auto;
 }
 
 .baritem {
   display: inline-block;
   position: normal;
-  width: auto;
+  width: 25%;
   height: 20pt;
   color: black;
   border: solid black;
