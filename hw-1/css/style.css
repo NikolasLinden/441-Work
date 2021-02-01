@@ -19,9 +19,7 @@ h1 {background-color: purple;
   padding: 10pt;
   width: 60%;
 }
-.p {display: inline-block;
-  text-align: center;
-}
+
 p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20;
@@ -58,6 +56,7 @@ div {
 
 }
 
+
 .navbar {
   display: block;
   background: rgba(150, 204, 204, 0.5);;
@@ -87,6 +86,32 @@ div {
   position: normal;
   width: auto;
   height: 20pt;
+  color: black;
+  border: solid black;
+  background-color: red;
+  text-align: center;
+  font-size: 20pt;
+  padding: 5pt;
+  margin: 5pt;
+}
+.button {
+  display: inline-block;
+  position: normal;
+  width: 25%;
+  height: auto;
+  color: black;
+  border: solid black;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 20pt;
+  padding: 5pt;
+  margin: 5pt;
+}
+.button:hover {
+  display: inline-block;
+  position: normal;
+  width: auto;
+  height: auto;
   color: black;
   border: solid black;
   background-color: red;
