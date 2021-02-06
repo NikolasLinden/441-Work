@@ -22,8 +22,8 @@ function quest1()
   function quest2()
 
       { console.log('hi')
-      var topping = document.getElementById('question2').value;
-      var questdecision = document.getElementById('decison1')
+      var topping = document.getElementById('question2');
+      var questdecision = document.getElementById('decison1'  )
       if (topping === "Cheese") { document.getElementById('quest').innerHTML ="A solid choice"
 
       }
