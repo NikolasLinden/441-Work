@@ -19,14 +19,13 @@ function quest1()
        quest.innerHTML = "That is an invalid answer. Try again";
       }
       }
-      function quest2()
-      {var topping = document.getElementById('question2').value;
+  function quest2()
+      { console.log var topping = document.getElementById('question2').value;
       var questdecision = document.getElementById('decison1')
-      if (topping === "Cheese") { quest.innerHTML = "A solid choice"
+      if (topping === "Cheese") { document.getElementById('quest').innerHTML ="A solid choice"
 
       }
-      else if (topping === "Salsa") { quest.innerHTML = "A spicy decision"
+      else if (topping === "Salsa") { document.getElementById('quest').innerHTML = "A spicy decision"
 
       }
-
     }
