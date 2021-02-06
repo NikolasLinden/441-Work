@@ -13,7 +13,7 @@ function quest1()
       else if (questquestion === "No") {
         quest.innerHTML = "Looks like there's nothing else to eat! You'll have to deal with it >:)" + "Beef or fish Tacos?"
         }
-        else { quest.innerHTML = "Invalid answer";
+        else {quest.innerHTML = "Invalid answer";
 
 
        quest.innerHTML = "That is an invalid answer. Try again";
