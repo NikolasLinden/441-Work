@@ -1,12 +1,12 @@
 function quest1()
       {
-        var questquestion = document.getElementById('question1'.value)
+        var questquestion = document.getElementById('question1').value;
         var questdecision = document.getElementById('decision1')
         if (questquestion === "Yes")
-        { document.getElementById('question1');
-        document.getElementById('questbutton1');
-        document.getElementById("question2");
-        document.getElementById("questbutton2");
+        { document.getElementById('question1').value;
+        document.getElementById('questbutton1').value;
+        document.getElementById("question2").value;
+        document.getElementById("questbutton2").value;
         quest.innerHTML = "So you want to live dangerously? Okay then, beef or fish tacos?"
 
       }
@@ -20,7 +20,7 @@ function quest1()
       }
       }
       function quest2()
-      {var topping = document.getElementById('question2'.value);
+      {var topping = document.getElementById('question2').value;
       var questdecision = document.getElementById('decison1')
       if (topping === "Cheese") { quest.innerHTML = "A solid choice"
 
