@@ -9,16 +9,16 @@
     <script>
       function Quest1()
       {
-        var qeustQuestion = document.getElementById('question1')
+        var qeustQuestion = document.getElementById('question1'.value)
         var questDecision = document.getElementById('decision1')
         if (answer1 === "Yes")
-        { document.getElementById('decision1');
+        { document.getElementById('question1');
         document.getElementById('questbutton1');
         Quest.innerHTML = "So you want to live dangerously? Okay then, beef or fish tacos?"
 
       }
       else if (answer1 === "No") {
-        Quest.innerHTML = "Looks like there's nothing else to eat! You'll have to deal with it >:)" + "Beef or Fish Tacos?"
+        Quest.innerHTML = "Looks like there's nothing else to eat! You'll have to deal with it >:)" + "Beef or fish Tacos?"
         }
         else { Quest.innerHTML = "Invalid answer";
 
@@ -27,8 +27,8 @@
       }
       }
       function Quest2()
-      {var topping = document.getElementById('decision2');
-      var choice = document.getElementById('decision')
+      {var topping = document.getElementById('question2'.value);
+      var choice = document.getElementById('questbutton2')
       if (topping === "Cheese") { Quest.innerHTML = "A solid choice"
 
       }
