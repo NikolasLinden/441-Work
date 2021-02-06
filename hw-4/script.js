@@ -22,12 +22,12 @@ function quest1()
   function quest2()
 
       { console.log('hi')
-      var topping = document.getElementById('topping').value;
+      var myTopping = document.getElementById('topping').value;
       var questdecision = document.getElementById('decison1');
-      if (topping === "Cheese") { document.getElementById('quest').innerHTML ="A solid choice"
+      if (myTopping === "Beef") { document.getElementById('quest').innerHTML ="A solid choice"
 
       }
-      else if (topping === "Salsa") { document.getElementById('quest').innerHTML = "A spicy decision"
+      else if (myTopping === "Fish") { document.getElementById('quest').innerHTML = "A spicy decision"
 
       }
     }
