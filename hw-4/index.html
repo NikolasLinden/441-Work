@@ -1,0 +1,79 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="author" content="Nikolas Linden">
+    <title>Nikolas Linden</title>
+    <script>
+      function Quest1()
+      {
+        var qeustQuestion = document.getElementById('question1')
+        var questDecision = document.getElementById('decision1')
+        if (answer1 === "Yes")
+        { document.getElementById('decision1');
+        document.getElementById('questbutton1');
+        Quest.innerHTML = "So you want to live dangerously? Okay then, beef or fish tacos?"
+
+      }
+      else if (answer1 === "No") {
+        Quest.innerHTML = "Looks like there's nothing else to eat! You'll have to deal with it >:)" + "Beef or Fish Tacos?"
+        }
+        else { Quest.innerHTML = "Invalid answer";
+
+
+       Quest.innerHTML = "That is an invalid answer. Try again";
+      }
+      }
+      function Quest2()
+      {var topping = document.getElementById('decision2');
+      var choice = document.getElementById('decision')
+      if (topping === "Cheese") { Quest.innerHTML = "A solid choice"
+
+      }
+      else if (topping === "Salsa") { Quest.innerHTML = "A spicy decision"
+
+      }
+
+    }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../hw-1/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+    <body id="background">
+      <div class="">
+            <h1>Nikolas Linden</h1>
+      </div>
+      <div class="navbar">
+        <div class="baritem">
+          <a href="./../index.html">About Me</a>
+        </div>
+        <div class="baritem">
+          <a href="../hw-2/index.html">Javascript</a>
+        </div>
+        <div class="baritem">
+          <a href="../hw-3/index.html">Adv. Game</a>
+        </div>
+
+            <div class="">
+              <img src="./images/taco.png" width="200" height="200">
+
+            </div>
+
+
+            <div id="decision" class="para">
+              Its Taco Tuesday at the cafeteria, but will you dare enter the horrid halls?
+
+
+
+              </div>
+
+              <input type="text" id="question1" value="Enter Yes or No">
+              <br>
+              <button id="questbutton1" onclick="Quest2">Click this to continue</button>
+
+
+
+
+    </body>
