@@ -3,10 +3,10 @@ function quest1()
         var questquestion = document.getElementById('question1').value;
         var questdecision = document.getElementById('decision1')
         if (questquestion === "Yes")
-        { document.getElementById('question1').value;
-        document.getElementById('questbutton1').value;
-        document.getElementById("question2").value;
-        document.getElementById("questbutton2").value;
+        { document.getElementById('question1').style.display="none";
+        document.getElementById('questbutton1').style.display="none";
+        document.getElementById("question2").style.display="block";
+        document.getElementById("questbutton2").style.display="block";
         quest.innerHTML = "So you want to live dangerously? Okay then, beef or fish tacos?"
 
       }
