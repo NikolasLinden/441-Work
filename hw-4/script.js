@@ -23,8 +23,9 @@ function quest1() {
 
     quest.innerHTML = "That is an invalid answer. Try again, enter Yes or No";
   }
-return questdecision
-console.log(questdecision);
+  console.log(questquestion);
+return questquestion
+
 }
 
 
@@ -57,6 +58,8 @@ function quest2()
 
 
   }
+  console.log(myTopping);
+return myTopping
 }
 function quest3()
 
@@ -85,6 +88,8 @@ function quest3()
 
 
   }
+  console.log(myTopping);
+return myTopping
 }
 function quest4()
 
@@ -112,6 +117,8 @@ function quest4()
     quest.innerHTML = "That is an invalid answer. Try again, enter Mild or Hot";
 
   }
+  console.log(myTopping);
+return myTopping
 }
 function quest5()
 
@@ -138,6 +145,8 @@ function quest5()
     quest.innerHTML = "That is an invalid answer. Try again, enter Here or To go";
 
   }
+  console.log(myTopping);
+return myTopping
 }
 function quest6()
 

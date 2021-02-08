@@ -63,7 +63,7 @@ div {
   text-align: center;
   padding: 20pt;
   width: 50%;
-  height: 30pt;
+  height: 13%;
   border: solid black;
   margin: auto;
 }
@@ -72,7 +72,7 @@ div {
   display: inline-block;
   position: normal;
   width: 25%;
-  height: 20pt;
+  height: auto;
   color: black;
   border: solid black;
   background-color: lightblue;
