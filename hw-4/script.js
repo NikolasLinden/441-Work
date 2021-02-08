@@ -1,12 +1,10 @@
 function quest1() {
-  // this needed to be decision1 because that is the name of your textbox (with the yes or no in it)
+
   var questquestion = document.getElementById('decision1').value;
   var questdecision = document.getElementById('decision1')
   if (questquestion === "Yes") {
-    // this needed to be decision1 because that was that name of the textbox you want to hid
     document.getElementById('decision1').style.display = "none";
     document.getElementById('questbutton1').style.display = "none";
-    // this needed to be topping because that was the name of the textbox you wanted to show
     document.getElementById("topping").style.display = "block";
     document.getElementById("questbutton2").style.display = "block";
 
