@@ -25,8 +25,8 @@ function quest1() {
 
     quest.innerHTML = "That is an invalid answer. Try again, enter Yes or No";
   }
-return topping
-console.log(topping);
+return questdecision
+console.log(questdecision);
 }
 
 
