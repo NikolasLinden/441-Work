@@ -73,6 +73,7 @@ function quest3()
     document.getElementById("questbutton3").style.display = "none";
     document.getElementById("topping3").style.display = "block";
     document.getElementById("questbutton4").style.display = "block";
+    document.getElementById("quest").style.color = "red"
   } else {
     quest.innerHTML = "Invalid answer";
 
@@ -100,6 +101,7 @@ function quest4()
     document.getElementById("questbutton4").style.display = "none";
     document.getElementById("End").style.display = "block";
     document.getElementById("questbutton5").style.display = "block";
+    document.getElementById("quest").style.color = "red"
   } else {
     quest.innerHTML = "Invalid answer";
 
@@ -139,6 +141,8 @@ function quest6()
 {
   var myTopping = document.getElementById('loop').value;
   var questdecision = document.getElementById('decison1');
+
+
   if (myTopping === "Yes") {
     document.getElementById('quest').innerHTML = "You decide to get another taco. Beef or Fish?"
     document.getElementById("loop").style.display = "none";
@@ -147,14 +151,16 @@ function quest6()
     document.getElementById("questbutton2").style.display = "block";
 
   } else if (myTopping === "No") {
-    document.getElementById('quest').innerHTML = "Finish"
     document.getElementById("loop").style.display = "none";
     document.getElementById("quest").style.color = "blue"
-  } else {
-    quest.innerHTML = "Invalid answer";
+    document.getElementById("picture").src="./images/thumb.png"
 
 
-    quest.innerHTML = "That is an invalid answer. Try again, enter Yes or No";
+    finish = false;
+    do {
+      document.getElementById('quest').innerHTML = "Thank you for playing!"
+
+    }while(finish);
 
 
   }
