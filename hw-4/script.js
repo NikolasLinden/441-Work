@@ -10,6 +10,7 @@ function quest1() {
     document.getElementById("topping").style.display = "block";
     document.getElementById("questbutton2").style.display = "block";
 
+
     quest.innerHTML = "So you want to live dangerously? Okay then, beef or fish tacos?"
 
   } else if (questquestion === "No") {
@@ -24,7 +25,11 @@ function quest1() {
 
     quest.innerHTML = "That is an invalid answer. Try again, enter Yes or No";
   }
+return topping
+console.log(topping);
 }
+
+
 
 function quest2()
 
@@ -154,11 +159,14 @@ function quest6()
     document.getElementById("loop").style.display = "none";
     document.getElementById("quest").style.color = "blue"
     document.getElementById("picture").src="./images/thumb.png"
+    document.getElementById("number")
+    document.getElementById("questbutton6").style.display = "none";
+    document.getElementById("questbutton7").style.display = "block";
 
 
     finish = false;
     do {
-      document.getElementById('quest').innerHTML = "Thank you for playing!"
+      document.getElementById('quest').innerHTML = "Thank you for playing! Please rate your experience with a number!"
 
     }while(finish);
 
