@@ -17,7 +17,7 @@ function gamearray()
   var gameimages = ["images/empire.jpg", "images/everest.jpg", "images/needle.jpg", "images/ranier.jpg", "images/rushmore.jpg"]
   var start = [0,0,0,0,0,0,0,0,0,0];
 while (images.length < 10) {
-  var randomfunction = Math.floor(Math.random()* gameimages.length)
+  var randomfunction = Math.floor(Math.random() * gameimages.length)
   if(start[randomfunction] < 5) {
     images.push(gameimages[randomfunction]);
     start[randomfunction] = start[randomfunction] + 1;
