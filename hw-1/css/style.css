@@ -32,6 +32,24 @@ div {
 }
 
 
+}
+.gamepara {
+  display: table;
+  width: 80%
+}
+.game2 {
+  display: table-table-row-group;
+}
+.game3 {
+  display: table-row;
+}
+
+.game4 {
+  display: table-cell;
+  padding: 2px 8px
+}
+
+
 .para {
   display: inline-block;
   margin: 30pt;
