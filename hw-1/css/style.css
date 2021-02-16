@@ -46,7 +46,7 @@ div {
 
 .game4 {
   display: table-cell;
-  padding: 2px 8px
+  padding: 2px 6px
 }
 
 
@@ -73,7 +73,17 @@ div {
   padding: 10pt;
 
 }
+.para3 {
+  display: block;
+  margin: auto;
+  margin-top: 30%;
+  background-color: #FFFAF0;
+  height: auto;
+  border: solid black;
+  padding: 10pt;
+  background: rgba(150, 204, 204, 0.5);
 
+}
 
 .navbar {
   display: block;
