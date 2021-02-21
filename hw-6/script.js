@@ -69,7 +69,7 @@ function vanish()
   document.getElementById(imagecall[first]).src = blankcall;
   document.getElementById(imagecall[second]).src = blankcall;
   first = -1;
-  secound = -2;
+  second = -2;
 }
 
 function userinfoadd()
@@ -82,6 +82,7 @@ function userinfoadd()
 user.firstname = firstname;
 user.lastname = lastname;
 user.age = age;
+attempts++
 user.attempts = attempt + 1;
 localStorage.setItem("userInfo", JSON.stringify(user));
 window.location = "index.html";
