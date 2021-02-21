@@ -2,8 +2,8 @@ var imagecall = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 var blankcall = "images/blank.jpg";
 var first = -1;
 var second = -2;
-var score = 0
-var totality = 0
+var score = 0;
+var totality = 0;
 var attempt = 0;
 var user = {"firstname":"", "lastname":"", "age":0, "score":0}
 var images = new Array();
@@ -78,7 +78,7 @@ function userinfoadd()
   var firstname = document.getElementById("txtFirstName").value;
   var lastname = document.getElementById("txtLastName").value;
   var age = document.getElementById("txtAge").value;
-  var attempts = document.getElementById('txtAttempt').value;
+  var attempts = document.getElementById('txtAttempt');
 user.firstname = firstname;
 user.lastname = lastname;
 user.age = age;
@@ -92,7 +92,7 @@ function userInfo()
 {
   var userInformation = localStorage.getItem("userInfo");
   user = JSON.parse(userInformation);
-  var str = "Name: " + user.firstname + " " + user.lastname + "<br>" + "Age: " + user.age + "<br>" + "Score: " + user.score "<br>" + "Attempts:" + user.attempts;
+  var str = "Name: " + user.firstname + " " + user.lastname + "<br>" + "Age: " + user.age + "<br>" + "Score: " + user.score + "<br>" + "Attempts:" + user.attempts;
   if (document.getElementById("endInformation") != null)
   { document.getElementById("endInformation").innerHTML = str;}
 }
