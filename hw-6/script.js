@@ -35,18 +35,21 @@ while (images.length < 10) {
 function toggle(game){
 
 
-if (first >= 0)
+if(first >= 0)
 {
   second = game;
   document.getElementById(imagecall[game]).src= images[second];
 }
-else if(first < 0);
+else if(first < 0) {
+  first = game;
+    document.getElementById(imagecall[first]).src= images[first];
+  }
 
 if (images[second] != images[first] && first >= 0 && second >= 0){
   score++;
   setTimeout(vanish, 1000);
 }
-else if(images[second] ==images[first] && first >= second >= 0)
+else if(images[second] ==images[first] && first >= 0 && second >= 0)
 {
   score++;
   totality++;
@@ -78,13 +81,14 @@ user.lastname = lastname;
 user.age = age;
 localStorage.setItem("userInfo", JSON.stringify(user));
 window.location = "index.html";
+console.log(123);
 }
 
 function userInfo()
 {
-  var userinformation = localStorage.getItem("userInfo");
-  user = JSON.parse(userinformation);
+  var userInformation = localStorage.getItem("userInfo");
+  user = JSON.parse(userInformation);
   var str = "Name: " + user.firstname + " " + user.lastname + "<br>" + "Age: " + user.age + "<br>" + "Score: " + user.score;
   if (document.getElementById("endInformation") != null)
-  { document.getElementById("endInformation").innterHTML = str;}
+  { document.getElementById("endInformation").innerHTML = str;}
 }
