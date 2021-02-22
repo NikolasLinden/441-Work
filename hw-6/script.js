@@ -4,7 +4,6 @@ var first = -1;
 var second = -2;
 var score = 0;
 var totality = 0;
-var attempt = 0;
 var user = {"firstname":"", "lastname":"", "age":0, "score":0}
 var images = new Array();
 
@@ -58,7 +57,6 @@ else if(images[second] ==images[first] && first >= 0 && second >= 0)
   second = -1;
   if(totality == images.length/2){
     user.score = score;
-    attempt++;
     localStorage.setItem("userInfo", JSON.stringify(user));
     window.location = "finalindex.html"
   }
@@ -83,7 +81,6 @@ function userinfoadd()
 user.firstname = firstname;
 user.lastname = lastname;
 user.age = age;
-user.attempts = attempt;
 localStorage.setItem("userInfo", JSON.stringify(user));
 window.location = "index.html";
 console.log(123);
@@ -93,7 +90,7 @@ function userInfo()
 {
   var userInformation = localStorage.getItem("userInfo");
   user = JSON.parse(userInformation);
-  var str = "Name: " + user.firstname + " " + user.lastname + "<br>" + "Age: " + user.age + "<br>" + "Score: " + user.score + "<br>" + "Attempts:" + user.attempts;
+  var str = "Name: " + user.firstname + " " + user.lastname + "<br>" + "Age: " + user.age + "<br>" + "Number of attempts: " + user.score;
   if (document.getElementById("endInformation") != null)
   { document.getElementById("endInformation").innerHTML = str;}
 }
