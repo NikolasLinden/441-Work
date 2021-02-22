@@ -58,6 +58,7 @@ else if(images[second] ==images[first] && first >= 0 && second >= 0)
   second = -1;
   if(totality == images.length/2){
     user.score = score;
+    attempt++;
     localStorage.setItem("userInfo", JSON.stringify(user));
     window.location = "finalindex.html"
   }
@@ -82,8 +83,7 @@ function userinfoadd()
 user.firstname = firstname;
 user.lastname = lastname;
 user.age = age;
-attempts++
-user.attempts = attempt + 1;
+user.attempts = attempt;
 localStorage.setItem("userInfo", JSON.stringify(user));
 window.location = "index.html";
 console.log(123);
