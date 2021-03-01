@@ -1,16 +1,15 @@
 var hw7Array = new Array();
 
-var imagething = image.thePath;
-document.getElementById("bridge").src = imagething;
+var count = 0
 
-var imagething = image.toString();
 class imagetime
 {
-  constructor(title, image, description, author, imageyear)
+
+  constructor(title, image, descript, author, imageyear)
   {
     this.title = title;
     this.image = image;
-    this.description = description;
+    this.descript = descript;
     this.author = author;
     this.imageyear = imageyear;
 
@@ -19,35 +18,64 @@ class imagetime
   toString()
   {
     console.log("ree");
-    return [ + "Image: " + this.imagething + "Decription: " + this.description + "Author: " + this.author + "Image Year: " + this.imageyear];
 
+    return "Title: " + this.title + "Decript: " + this.descript + "Author: " + this.author + "Image Year: " + this.imageyear;
   }
+
 
   get theTitle()
   {
-    return [this.title, this.image, this.description, this.author, this.imageyear];
+    return this.title;
+
   }
+
+  get thePath()
+  {
+    return this.image;
+  }
+  get theDescription()
+  {
+  return this.descript;
+}
+get theAuthor()
+{
+  return this.author;
+}
+get theDate()
+{
+  return this.imageyear
+}
 }
 
 function arraytime()
 {
 
-  var hwseven = new imagetime("A picture of the Fremont Bridge");
-  var hwseven1 = new imagetime();
-  var hwseven2 = new imagetime("The Fremont Bridge is one of many bridges connecting north seattle to the rest of it, crossing the ship canal just like the Aurora Bridge and Ballard Bridge nearby.");
-  var hwseven3 = new imagetime("Taken by Nikolas A. Linden");
-  var hwseven4 = new imagetime("Taken 2019");
-  hw7Array.push(hwseven);
-  hw7Array.push(hwseven1);
-  hw7Array.push(hwseven2);
-  hw7Array.push(hwseven3);
-  hw7Array.push(hwseven4);
+  var array1 = new imagetime("A picture of the Fremont Bridge" , "images/bridge.jpg" , "The Fremont Bridge is one of many bridges connecting north seattle to the rest of it, crossing the ship canal just like the Aurora Bridge and Ballard Bridge nearby.","Taken by Nikolas A. Linden" ,"Taken 2019");
+  var array2 = new imagetime("A picture of the Fremont Troll" , "images/troll.jpg" , "The Fremon Troll is one of the most famous landmarks in the area. The car underneath it's hand is supposed to be a Volkswagen Beetle.","Taken by Nikolas A. Linden" ,"Taken 2019");
+
+  hw7Array.push(array1);
+  hw7Array.push(array2);
 
 
 }
+
+
 function accessInformation()
 {
 
-  var random = Math.floor(Math.random() * hw7Array.length);
-  document.getElementById("title").innerHTML = hw7Array[random].stringthing();
+  var imagetime = hw7Array[count];
+  document.getElementById("title").innerHTML = imagetime.theTitle;
+  document.getElementById("descript").innerHTML = imagetime.theDescript;
+  document.getElementById("author").innerHTML = imagetime.theAuthor;
+  document.getElementById("imageyear").innerHTML = imagetime.theDate;
+
+  document.getElementById("allpictureinfo").innerHTML = imagetime.toString();
+
+  document.getElementById("imagething").src = imagetime.thePath;
+
+  count++;
+  if(count >= hw7Array.length)
+  {
+    count = 0;
+  }
 }
