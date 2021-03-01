@@ -1,5 +1,8 @@
 var hw7Array = new Array();
 
+var imagething = "images/bridge.jpg"
+
+var stringthing = myObject.toString();
 class imagetime
 {
   constructor(title, image, description, author, imageyear)
@@ -12,30 +15,24 @@ class imagetime
 
   }
 
-  toString()
+  myObject.toString()
   {
-    return "Title: " + this.title;
-    return "Image: " + this.image;
-    return "Decription: " + this.description;
-    return "Author: " + this.author;
-    return "Image Year: " + this.imageyear;
+    console.log("ree");
+    return ["break this: " + this.title + "Image: " + this.image + "Decription: " + this.description + "Author: " + this.author + "Image Year: " + this.imageyear];
+
   }
 
   get theTitle()
   {
-    return this.title;
-    return this.image;
-    return this.description;
-    return this.author;
-    return this.imageyear;
+    return [this.title, this.image, this.description, this.author, this.imageyear];
   }
-
 }
 
 function arraytime()
 {
+
   var hwseven = new imagetime("A picture of the Fremont Bridge");
-  var hwseven1 = new imagetime("insert image here");
+  var hwseven1 = new imagetime("");
   var hwseven2 = new imagetime("The Fremont Bridge is one of many bridges connecting north seattle to the rest of it, crossing the ship canal just like the Aurora Bridge and Ballard Bridge nearby.");
   var hwseven3 = new imagetime("Taken by Nikolas A. Linden");
   var hwseven4 = new imagetime("Taken 2019");
@@ -49,9 +46,7 @@ function arraytime()
 }
 function accessInformation()
 {
-  document.getElementById("title").innerHTML = hw7Array[0].toString();
-  document.getElementById("image").innerHTML = hw7Array[1].toString();
-  document.getElementById("description").innerHTML = hw7Array[2].toString();
-  document.getElementById("author").innerHTML = hw7Array[3].toString();
-  document.getElementById("imageyear").innerHTML = hw7Array[4].toString();
+
+  var random = Math.floor(Math.random() * hw7Array.length);
+  document.getElementById("title").innerHTML = hw7Array[random].stringthing();
 }
