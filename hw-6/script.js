@@ -1,7 +1,7 @@
 var imagecall = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 var blankcall = "images/blank.jpg";
 var first = -1;
-var second = -2;
+var second = -1;
 var score = 0;
 var totality = 0;
 var user = {"firstname":"", "lastname":"", "age":0, "score":0}

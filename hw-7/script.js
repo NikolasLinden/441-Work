@@ -19,7 +19,7 @@ class imagetime
   {
     console.log("ree");
 
-    return "Title: " + this.title + "Decript: " + this.descript + "Author: " + this.author + "Image Year: " + this.imageyear;
+
   }
 
 
@@ -33,7 +33,7 @@ class imagetime
   {
     return this.image;
   }
-  get theDescription()
+  get theDescript()
   {
   return this.descript;
 }
@@ -69,7 +69,6 @@ function accessInformation()
   document.getElementById("author").innerHTML = imagetime.theAuthor;
   document.getElementById("imageyear").innerHTML = imagetime.theDate;
 
-  document.getElementById("allpictureinfo").innerHTML = imagetime.toString();
 
   document.getElementById("imagething").src = imagetime.thePath;
 
