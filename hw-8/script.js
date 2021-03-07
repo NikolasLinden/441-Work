@@ -37,8 +37,8 @@ return this.selector + ":" + this.imagePath
 function arraytime()
 {
 
-  var fremont = new imagetime("#fremont", "images/troll.jpg");
-  var fremont2 = new imagetime("#fremont", "images/bridge.jpg");
+  var fremont = new imagetime("#fremont", "images/troll.jpg", "#third", "#square");
+  var fremont2 = new imagetime("#fremont", "images/bridge.jpg", "#fourth", "#square2");
 
   hw8Array.push(fremont);
   hw8Array.push(fremont2);
@@ -58,7 +58,7 @@ $(document).ready(function(){
   $("button").click(function(){
     $("stuff").fadeOut();
 
-    setInterval(moveSquare, 1000);
+    setInterval(moveSquare, 5000);
 
 
 
@@ -68,20 +68,17 @@ $(document).ready(function(){
 
 function moveSquare()
 {
-  var imagetime = hw8Array[count];
+
+  $(hw8Array[count].theSelector).attr("src", hw8Array[count].theImagePath);
+  $(hw8Array[count].theSelector).fadeOut().fadeIn();
   count++;
   if(count >= hw8Array.length)
   {
     count = 0;
   }
-
-  $(hw8Array[count].theSelector).fadeOut().fadeIn();
-  {
-
-  }
   $("#third").toggle();
-  $("#square").animate({left:290}).animate({top:500}).animate({left:0}).animate({top:500});{
-
-  }
+  $("#fourth").toggle();
+  $("#square").toggle().animate({left:290}).animate({top:500}).animate({left:0}).animate({top:500}).fadeOut();
+  $("#square2").toggle().animate({left:290}).animate({top:500}).animate({left:0}).animate({top:500}).fadeOut();
 
 }
