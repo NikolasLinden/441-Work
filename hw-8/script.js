@@ -78,7 +78,7 @@ function moveSquare()
   }
   $("#third").toggle();
   $("#fourth").toggle();
-  $("#square").toggle().animate({left:290}).animate({top:500}).animate({left:0}).animate({top:500}).fadeOut();
-  $("#square2").toggle().animate({left:290}).animate({top:500}).animate({left:0}).animate({top:500}).fadeOut();
+  $("#square").toggle().animate({left:290}).animate({top:500}).animate({left:0}).animate({top:500}).fadeOut().fadeIn();
+  $("#square2").toggle().animate({left:290}).animate({top:500}).animate({left:0}).animate({top:500}).fadeOut().fadeIn();
 
 }
