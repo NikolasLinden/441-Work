@@ -1,7 +1,8 @@
-body, html {
+body,
+html {
   margin: 0%;
   padding: 0%;
-  background-image: url("../images/nikolas.jpg");
+  /*background-image: url("../images/nikolas.jpg");*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +12,8 @@ body, html {
 }
 
 
-h1 {background-color: purple;
+h1 {
+  background-color: purple;
   font-family: 'PT Serif', serif;
   text-align: center;
   border: solid black;
@@ -24,22 +26,26 @@ p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20;
 }
+
 div {
   text-align: center;
   margin: right;
   width: auto;
-;
+  ;
 }
 
 
 }
+
 .gamepara {
   display: table;
   width: 80%
 }
+
 .game2 {
   display: table-table-row-group;
 }
+
 .game3 {
   display: table-row;
 }
@@ -62,6 +68,7 @@ div {
   background: rgba(150, 204, 204, 0.5);
 
 }
+
 .para2 {
   display: inline-block;
   margin: 30pt;
@@ -73,6 +80,7 @@ div {
   padding: 10pt;
 
 }
+
 .para3 {
   display: block;
   margin: auto;
@@ -87,7 +95,8 @@ div {
 
 .navbar {
   display: block;
-  background: rgba(150, 204, 204, 0.5);;
+  background: rgba(150, 204, 204, 0.5);
+  ;
   text-align: center;
   padding: 20pt;
   width: 50%;
@@ -109,6 +118,7 @@ div {
   padding: 5pt;
   margin: 5pt;
 }
+
 .baritem:hover {
   display: inline-block;
   position: normal;
@@ -122,6 +132,7 @@ div {
   padding: 5pt;
   margin: 5pt;
 }
+
 .button {
   display: inline-block;
   position: normal;
@@ -135,22 +146,27 @@ div {
   padding: 5pt;
   margin: 5pt;
 }
+
 #square {
-     width: 40px;
-     height: 10px;
-     position: absolute;
-     left: 0;
-     top: 400;
-     font-size: 20pt;
-   }
-   #square2 {
-        width: 40px;
-        height: 10px;
-        position: absolute;
-        left: 0;
-        top: 400;
-        font-size: 20pt;
-      }
+  width: 40px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 400;
+  font-size: 20pt;
+  background-color: blueviolet;
+}
+
+#square2 {
+  width: 40px;
+  height: 10px;
+  position: absolute;
+  left: 600;
+  top: 200;
+  font-size: 20pt;
+  background-color: aqua;
+}
+
 .button:hover {
   display: inline-block;
   position: normal;
