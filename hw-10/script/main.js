@@ -10,11 +10,11 @@ var object2;
 makeobject();
 showobject();
 
-setInterval(moveobject1, 6000);
+setInterval(randomobject2, 6000);
 
 function makeobject() {
-  object1 = new brick (x, y, 30, 30, "one")
-  object2 = new brick (x2, y2, 20, 20, "two")
+  object1 = new object (x, y, 30, 30, "one")
+  object2 = new object (x2, y2, 20, 20, "two")
 }
 function randomobject2() {
   object2.setX(Math.floor(Math.random() * canvas.width));
@@ -45,13 +45,13 @@ function movementrules(event) {
   var char = event.which || event.keyCode;
   var pressedbutton = String.fromCharCode(char);
   if (pressedbutton == "w") {
-    moveUp();
+    up();
   } else if (pressedbutton == "s") {
-    moveDown();
+    down();
   } else if (pressedbutton == "d") {
-    moveRight();
+    right();
   } else if (pressedbutton == "a") {
-        moveLeft();  }
+        left();  }
     showobject();
 }
 function up() {
@@ -84,4 +84,5 @@ function playAudio() {
 
 function pauseAudio() {
   x.pause();
+}
 }
