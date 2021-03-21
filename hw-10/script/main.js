@@ -4,8 +4,8 @@ var x = 80;
 var y = 80;
 var x2 = 120;
 var y2 = 120;
-var square1;
-var square2;
+var object1;
+var object2;
 
 makeobject();
 showobject();
@@ -74,4 +74,14 @@ function ifcollide(thing1, thing2) {
         ((thing1.x + thing1.width) < thing2.x) ||
         (thing1.x > (thing2.x + thing2.width))
     );
+}
+
+var x = document.getElementById("Audio");
+
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
 }
