@@ -67,22 +67,14 @@ function right() {
     object1.setX(object1.theX + 5);
 }
 
-function ifcollide(thing1, thing2) {
+function ifcollide(object1, object2) {
     return !(
-        ((thing1.y + thing1.height) < (thing2.y)) ||
-        (thing1.y > (thing2.y + thing2.height)) ||
-        ((thing1.x + thing1.width) < thing2.x) ||
-        (thing1.x > (thing2.x + thing2.width))
+        ((object1.y + object1.height) < (object2.y)) ||
+        (object1.y > (object2.y + object2.height)) ||
+        ((object1.x + object1.width) < object2.x) ||
+        (object1.x > (object2.x + object2.width))
     );
 }
 
-var x = document.getElementById("Audio");
 
-function playAudio() {
-  x.play();
-}
-
-function pauseAudio() {
-  x.pause();
-}
 }
