@@ -67,6 +67,7 @@ function right() {
     object1.setX(object1.theX + 5);
 }
 
+
 function ifcollide(object1, object2) {
     return !(
         ((object1.y + object1.height) < (object2.y)) ||
