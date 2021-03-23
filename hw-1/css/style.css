@@ -11,6 +11,13 @@ html {
 
 }
 
+#canvasthing {
+  border: black;
+  border-style: dashed;
+  border-width: 20px;
+  background-color: gray;
+}
+
 
 h1 {
   background-color: purple;
