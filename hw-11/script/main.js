@@ -24,7 +24,7 @@ function setup()
     ctx = canvas.getContext("2d");
 
   object1 = new object(80, 80, 30, 30, "#0000FF");
-  object2 = new object(120, 120, 50, 50, "#00FF00");
+  object2 = new object(120, 120, 300, 50, "#00FF00");
   $.getJSON("data/information.json", function(data)
   {for(var i = 0; i < data.objects.length; i++)
     {
@@ -69,6 +69,7 @@ function movementrules(event) {
           if(test2 == true)
           {
               break;
+              objectArray.splice(0, 1);
           }
 
   if(test || test2)
@@ -92,6 +93,7 @@ function movementrules(event) {
           }
   }
   showobject();
+}
 }
 function up()
 {
@@ -125,7 +127,7 @@ function showobject() {
 ctx.font = "30px Arial";
     ctx.fillText("Tries: " + tries, 10, 50);
 }
-function ifcollide(object1, object2) {
+function collide(object1, object2) {
     return !(
         ((object1.y + object1.height) < (object2.y)) ||
         (object1.y > (object2.y + object2.height)) ||
