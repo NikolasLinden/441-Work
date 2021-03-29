@@ -70,6 +70,8 @@ function movementrules(event) {
           {
               break;
               objectArray.splice(0, 1);
+              collide();
+              console.log("ree");
           }
 
   if(test || test2)
