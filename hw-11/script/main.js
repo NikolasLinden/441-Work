@@ -7,6 +7,7 @@ var questions;
 var objectArray = [];
 var object1, object2;
 var tries = 3;
+var score = 0;
 
 
 
@@ -69,8 +70,9 @@ function movementrules(event) {
           if(test2 == true)
           {
               break;
+              score++;
               objectArray.splice(0, 1);
-              collide();
+              collide(object1,objectArray[i]);
               console.log("ree");
           }
 
@@ -128,6 +130,7 @@ function showobject() {
 
 ctx.font = "30px Arial";
     ctx.fillText("Tries: " + tries, 10, 50);
+    ctx.fillText("Score: " + score, 10, 100);
 }
 function collide(object1, object2) {
     return !(
