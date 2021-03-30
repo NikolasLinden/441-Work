@@ -69,11 +69,10 @@ function movementrules(event) {
           test2 = collide(object1,objectArray[i]);
           if(test2 == true)
           {
-              break;
-              score++;
+            score ++;
               objectArray.splice(0, 1);
-              collide(object1,objectArray[i]);
-              console.log("ree");
+            break;
+
           }
 
   if(test || test2)
@@ -131,6 +130,13 @@ function showobject() {
 ctx.font = "30px Arial";
     ctx.fillText("Tries: " + tries, 10, 50);
     ctx.fillText("Score: " + score, 10, 100);
+    ctx.fillText("Move here to finish", 400, 70);
+    ctx.fillText("VVV", 480, 100);
+    ctx.fillText("<-- Don't touch!", 170, 400);
+    ctx.fillText("Collect the labeled squares in order!", 200, 50);
+    ctx.fillText("2", 200, 195);
+    ctx.fillText("3", 275, 570);
+    ctx.fillText("1", 600, 495);
 }
 function collide(object1, object2) {
     return !(

@@ -1,5 +1,5 @@
 
-{"objects":[{"x":600,"y":500,"height":15,"width":15,"color":"red"},
+{"objects":[{"x":600,"y":500,"height":15,"width":15,"color":"#FF0000"},
   {"x":200,"y":200,"height":5,"width":5,"color":"blue"},
   {"x":275,"y":575,"height":25,"width":25,"color":"green"},
   {"x":489,"y":105,"height":50,"width":50,"color":"orange"}]}
