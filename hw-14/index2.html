@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <title>Node.js</title>
+      <style>
+         body{
+            background-color: gray;
+         }
+         div {
+           text-align: center;
+           margin: right;
+           width: auto;
+         }
+         h1 {
+           background-color: purple;
+           font-family: 'PT Serif', serif;
+           text-align: center;
+           border: solid black;
+           display: inline-block;
+           padding: 10pt;
+           width: 60%;
+         }
+         .para {
+            display: inline-block;
+            margin: 30pt;
+            width: 60%;
+            background-color: #FFFAF0;
+            text-align: center;
+            height: 300;
+            border: solid black;
+            padding: 10pt;
+            background: rgba(150, 204, 204, 0.5);
+      </style>
+      <script>
+         function refreshPage()
+         {
+            const params = new URLSearchParams(window.location.search)
+            var fName = params.get("firstName");
+            var lName = params.get("lastName");
+            var age = params.get("personage");
+            var color = params.get("favoritecolor")
+            var refresh = params.has("norefresh");
+            if(!refresh)
+            {
+               window.location = "index2.html?firstName=" + fName + "&lastName=" + lName + "&personage=" + age + "&favoritecolor=" + color + "&norefresh=1";
+            }
+
+         }
+      </script>
+   </head>
+
+   <body onload="refreshPage();">
+     <h1>
+       Welcome!
+     </h1>
+     <div class="para">
+       <span>Nikolas Linden<br>Your age is 23<br>Your favorite color is Blue</span>
+     </div>
+
+
+
+   </body>
+</html>
