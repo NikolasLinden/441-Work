@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Three.js</title>
+        <style>
+            body { margin: 0; }
+            canvas { display: block; }
+        </style>
+    </head>
+    <body>
+        <script src="js/three.min.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/TrackballControls.js"></script>
+        <script>
+
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        var object1, object2, object3, object4, object5, object6, object7;
+        function makeobject1() {
+          var geometry = new THREE.SphereGeometry();
+          var material = new THREE.MeshBasicMaterial({
+            color: 0x7F7F7F
+          });
+          object1 = new THREE.Mesh(geometry, material);
+          object1.position.set(0, 0, 0);
+          scene.add(object1);
+          object1.scale.x = 1.5;
+          object1.scale.y = 1.5;
+          object1.scale.z = 1.5;
+          animate();
+        }
+        function animate() {
+          //I managed to hide this inside the model the program is focusing on, makes it look like the other animated shapes are floating around it
+          requestAnimationFrame(animate);
+          object1.rotation.x += 0.02;
+          object1.rotation.y += 0.02;
+          makeobject2();
+          makeobject3();
+          makeobject4();
+          makeobject5();
+          makeobject6();
+          makeobject7();
+          renderer.render(scene, camera);
+        }
+        function makeobject2() {
+          var geometry = new THREE.SphereGeometry();
+          var material = new THREE.MeshBasicMaterial({
+            color: 0x24d8f0
+          });
+          object2 = new THREE.Mesh(geometry, material);
+          object2.position.set(20, 0, 0);
+          object1.add(object2);
+          object2.scale.x = 1.5;
+          object2.scale.y = 1.5;
+          object2.scale.z = 1.5;
+          animate2();
+        }
+
+        function animate2() {
+          requestAnimationFrame(animate2);
+          object2.rotation.x += 0.05;
+          object2.rotation.y += 0.05;
+
+        }
+        function makeobject3() {
+          var geometry = new THREE.SphereGeometry();
+          var material = new THREE.MeshBasicMaterial({
+            color: 0x24d8f0
+          });
+          object3 = new THREE.Mesh(geometry, material);
+          object3.position.set(-20, 0, 0);
+          object1.add(object3);
+          object3.scale.x = 1.5;
+          object3.scale.y = 1.5;
+          object3.scale.z = 1.5;
+          animate3();
+        }
+
+        function animate3() {
+          requestAnimationFrame(animate3);
+          object3.rotation.x += 0.05;
+          object3.rotation.y += 0.05;
+        }
+        function makeobject4() {
+          var geometry = new THREE.SphereGeometry();
+          var material = new THREE.MeshBasicMaterial({
+            color: 0x26ed26
+          });
+          object4 = new THREE.Mesh(geometry, material);
+          object4.position.set(0, 20, 0);
+          object1.add(object4);
+          object4.scale.x = 1.5;
+          object4.scale.y = 1.5;
+          object4.scale.z = 1.5;
+          animate4();
+        }
+
+        function animate4() {
+          requestAnimationFrame(animate4);
+          object4.rotation.x += 0.05;
+          object4.rotation.y += 0.05;
+        }
+        function makeobject5() {
+          var geometry = new THREE.SphereGeometry();
+          var material = new THREE.MeshBasicMaterial({
+            color: 0x26ed26
+          });
+          object5 = new THREE.Mesh(geometry, material);
+          object5.position.set(0, -20, 0);
+          object1.add(object5);
+          object5.scale.x = 1.5;
+          object5.scale.y = 1.5;
+          object5.scale.z = 1.5;
+          animate5();
+        }
+
+        function animate5() {
+          requestAnimationFrame(animate5);
+          object5.rotation.x += 0.05;
+          object5.rotation.y += 0.05;
+        }
+        function makeobject6() {
+          var geometry = new THREE.SphereGeometry();
+          var material = new THREE.MeshBasicMaterial({
+            color: 0xfd7012
+          });
+          object6 = new THREE.Mesh(geometry, material);
+          object6.position.set(0, 0, 20);
+          object1.add(object6);
+          object6.scale.x = 1.5;
+          object6.scale.y = 1.5;
+          object6.scale.z = 1.5;
+          animate6();
+        }
+
+        function animate6() {
+          requestAnimationFrame(animate6);
+          object6.rotation.x += 0.05;
+          object6.rotation.y += 0.05;
+        }
+        function makeobject7() {
+          var geometry = new THREE.SphereGeometry();
+          var material = new THREE.MeshBasicMaterial({
+            color: 0xfd7012
+          });
+          object7 = new THREE.Mesh(geometry, material);
+          object7.position.set(0, 0, -20);
+          object1.add(object7);
+          object7.scale.x = 1.5;
+          object7.scale.y = 1.5;
+          object7.scale.z = 1.5;
+          animate7();
+        }
+
+        function animate7() {
+          requestAnimationFrame(animate7);
+          object7.rotation.x += 0.05;
+          object7.rotation.y += 0.05;
+        }
+        function startscene() {
+          var scene = new THREE.Scene();
+          scene.background = new THREE.Color(0x2C2A29);
+          return scene;
+        }
+        function lighting(scene) {
+          var light = new THREE.PointLight(0x7F7F7F, 1, 0);
+          light.position.set(20, 50, 60);
+          scene.add(light);
+          var ambientLight = new THREE.AmbientLight(0x7F7F7F);
+          scene.add(ambientLight);
+          return light;
+        }
+        function startviewpoint() {
+          var aspectRatio = window.innerWidth / window.innerHeight;
+          var camera = new THREE.PerspectiveCamera(75, aspectRatio, 0.1, 1000);
+          camera.position.set(0, 45, -10);
+          return camera;
+        }
+
+        function renderthing() {
+          var renderer = new THREE.WebGLRenderer({
+            antialias: true
+          });
+          renderer.setPixelRatio(window.devicePixelRatio);
+          renderer.setSize(window.innerWidth, window.innerHeight);
+          document.body.appendChild(renderer.domElement);
+          return renderer;
+        }
+        function controller(camera, renderer) {
+          var controls = new THREE.TrackballControls(camera, renderer.domElement);
+          controls.zoomSpeed = 0.4;
+          controls.panSpeed = 1.8;
+          return controls;
+        }
+        function loadModel() {
+          var loader = new THREE.OBJLoader();
+          loader.load('/Moon 2K.obj', function (object) {
+            object.rotation.z = Math.PI;
+            scene.add(object);
+          });
+        }
+        function render() {
+          requestAnimationFrame(render);
+          renderer.render(scene, camera);
+          controls.update();
+        };
+        var scene = startscene();
+        var camera = startviewpoint();
+        var light = lighting(scene);
+        var renderer = renderthing();
+        var controls = controller(camera, renderer);
+        var game1 = makeobject1();
+        loadModel()
+        render();
+
+        </script>
+    </body>
+</html>
